@@ -12,7 +12,8 @@ var app = express();
 // Database
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk ('localhost:27017/nodetest');
+//var db = monk ('localhost:27017/nodetest');
+var db = monk(' mongodb://heroku_03t22vql:e7fns9atoo8nafc4u4qsr57st3@ds051615.mongolab.com:51615/heroku_03t22vql')
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
